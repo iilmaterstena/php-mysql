@@ -24,6 +24,8 @@ $var =10;
     echo " a is less than b <hr>";
  }
 
+
+ 
 switch($age){
     case ($age>=0 && $age<18):
         echo "you are a minor <hr> ";
