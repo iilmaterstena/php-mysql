@@ -19,4 +19,3 @@ echo str_replace("mira", "zhurmshmja", $the_String)."<hr>";
 echo strrev($the_String)."<hr>";
 
 ?>
-
