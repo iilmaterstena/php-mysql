@@ -1,0 +1,24 @@
+<?php 
+
+  include_once('config.php');
+
+  if(isset($_POST['submit'])) {
+
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO users(username, email, password) VALUES (:username, :email, :password)";
+
+    $sqlQuery = $connection ->prepare($sql);
+
+    $sqlQuery ->bindParam(':username', $username);
+    $sqlQuery ->bindParam(':password', $password);
+    $sqlQuery ->bindParam(':email', $email);
+
+    $sqlQuery ->execute();
+    echo "The user was added successfully!"; 
+  }
+  
+
+?>
