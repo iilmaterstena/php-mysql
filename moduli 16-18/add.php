@@ -8,7 +8,7 @@
 
 
     try{
-        $connection = new PDO("mysql:host=$host; dbname=$db", $user, $pass);
+       $connection = new PDO("mysql:host=$host; dbname=$db", $user, $pass);
 
 
         $sql = "CREATE TABLE users (

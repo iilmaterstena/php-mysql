@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     else{
         $sql = "INSERT INTO users(name, surname, username, email, password, confirm_password) VALUES(:name ,:surname,:username, :email, :password, :confirm_password  )";
         
-        $insertsql = $connect->perpare($sql);
+        $insertsql = $connection ->perpare($sql);
 
         
         $insertsql->bindParam(':name ', $name);
